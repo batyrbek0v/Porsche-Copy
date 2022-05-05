@@ -111,7 +111,6 @@
 }
 .swiper-slide .fa-angle-right{
     position: absolute;
-    color: white;
     font-size: 40px;
     top: 80%;
     left: 5.3%;
@@ -672,8 +671,9 @@
         height: 90%;
     }
     .swiper{
-        height: 100vh;
+        height: 75vh;
     }
+
     .burger .bars p{
         font-size: 15px;
         font-weight: 400;
@@ -685,11 +685,11 @@
         border: 1px solid red;
     }
     .swiper-slide .banner_text{
-        text-align: left;
         width: 100%;
         font-size: 30px;
         top: 75%;
         left: 10%;
+        text-align: left;
         line-height: 2.55rem;
     }
     .swiper-slide .banner_text .span_text{
