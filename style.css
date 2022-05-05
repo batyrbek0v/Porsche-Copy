@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    height: 120px;
+    padding: 0 7rem;
+    gap: 20px;
+    z-index: 999;
+}
+.nav .logo{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+.nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav .header_cars{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 5px;
+}
+.nav .header_cars .header_cars_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav .header_cars .header_social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    gap: 20px;
+}
+.nav .header_cars .header_social .icon{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.borderL{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    width: 50px;
+    border-left: 1px solid #ccc;
+}
+
+/* SWIPER */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide .fa-angle-right{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 80%;
+    left: 5.3%;
+    color: #D5001C;
+}
+.swiper-slide .banner_text{
+    position: absolute;
+    top: 75%;
+    left: 7%;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+.swiper-slide .span_text{
+    position: absolute;
+    top: 85%;
+    left: 1%;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item__next , .item_prev{
+    color: white;
+    outline: none;
+    border: none;
+}
+.swiper-pagination-bullet{
+    opacity: 0.8;
+    background-color: white;
+}
+.swiper-pagination-bullet-active{
+    background-color: #D5001C !important;
+}
+
+.banner_text:hover{
+    color: red;
+    cursor: pointer;
+}
+/* SWIPER-END */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* MAIN */
+
+/* MODELS_BLOCK */
+.main_container{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.title{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 6rem;
+}
+.title p{
+    font-size: 40px;
+    font-weight: 500;
+}
+.main_container .car_block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.main_container .car_block .car_cards{
+    position: relative;
+    width: 506px;
+}
+.main_container .car_block .car_cards .car_title{
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    color: white;
+}
+.car_cards .car_btn{
+    display: flex;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 6%;
+    gap: 8px;
+}
+.car_cards .car_btn .car_all , .car_build{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 15px;
+    transition: .2s ease-in-out;
+}
+.car_all{
+    width: 130px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+.car_build{
+    border: none;
+}
+.car_build:hover{
+    color: white;
+    background-color: #D5001C;
+    border: none;
+}
+.car_all:hover{
+    color: #D5001C;
+    border: 1px solid #D5001C;
+}
+.car_all .fa-angle-right{
+    font-size: 17px;
+}
+.fa-external-link-alt{
+    font-size: 12px;
+    margin-right: 5px;
+}
+.main_container .car_block .car_cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MODELS_BLOCK-END */
+
+/* LIVE-BLOCK */
+.more_container{
+    width: 100%;
+    min-height: 100vh;
+    /* border-top: 5px solid red;
+    border-bottom: 5px solid red; */
+    padding: 0 6.25rem;
+}
+.more_container .title{
+    padding: 0;
+    margin-top: 50px;
+}
+
+.more_container .title h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+.more_container .live_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 37vh;
+    background: url('https://files.porsche.com/filestore/image/multimedia/none/module-background-leipzig/normal/dc3517d1-1668-11ea-80c6-005056bbdc38;sN/porsche-normal.jpg') center / cover;
+    padding: 3.75rem;
+    column-rule: white;
+    z-index: 9;
+}
+.live_block:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 37vh;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+.live_block .live_content{
+    width: 72%;
+    color: white;
+
+}
+.live_block .live_content .live_inder_text{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.live_content .live_inder_text:hover{
+    color: #D5001C;
+}
+.live_block .live_content h3{
+    font-size: 24px;
+}
+.live_block .live_content p{
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 16px;
+}
+.live_btnS{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.live_btnS .agree_btn , .info_btn{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background-color: #313639;
+    color: white;
+    transition: .2s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.agree_btn:hover , .info_btn:hover{
+    background-color: #D5001C;
+}
+.load_more_block{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+.load_more_block .load_more_bnt{
+    width: 130px;
+    padding: 14px 20px;
+    font-size: 16px;
+    background-color: #313639;
+    color: white;
+    border: none;
+    outline: none;
+    gap: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+.load_more_block .load_more_bnt:hover{
+    background-color: #D5001C;
+}
+.more_container .title:nth-child(4){
+    padding: 0;
+    padding: 10px 0;
+    margin-top: 0;
+}
+/* LIVE-BLOCK-END */
+
+/* DISCOVER_BLOCK */
+.discover_block{
+    display: flex;
+}
+.discover_block a{
+    text-decoration: none;
+}
+.discover_block .discover_cards{
+    position: relative;
+    width: 330px;
+    height: 240px;
+}
+.discover_cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discover_cards::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: #D5001C;
+    position: absolute;
+    opacity: 0;
+    visibility: 0;
+    transition: .2s ease-in-out;
+}
+.discover_cards:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+.discover_cards:hover .discover_cards_content{
+    color: #D5001C;
+}
+
+.discover_cards .discover_cards_content{
+    display: flex;
+    align-items: center;
+    color: #3d3c3c;
+    gap: 10px;
+    transition: .2s ease-in-out;
+}
+.discover_cards_content .fa-angle-right{
+    color: #D5001C;
+}
+/* DISCOVER_BLOCK-END */
+
+/* FOOTER_CONTAINER */
+.footer_container{
+    margin-top: 80px;
+    padding: 2rem 6rem;
+}
+.footer_container .footer_list_block{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-top: 2px solid #ccc;
+}
+.footer_list_block .footer_list{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+}
+.footer_list_block .footer_list .main_list{
+    font-size: 19px;
+    font-weight: 600;
+    color: #222;
+}
+.footer_list_block .footer_list .connect_list{
+    font-size: 20px;
+    font-weight: 600;
+    color: #959899;
+}
+.footer_list_block .footer_list li a{
+    color: #313639;
+    text-decoration: none;
+}
+.footer_list_block .footer_list li a:hover{
+    color: #c90202;
+}
+.footer_list_block:last-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    border: none;
+}
+.footer_list_block .share_btn{
+    width: 25%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #2d3235;
+    text-align: left;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.share_btn .fa-share-alt{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer_list_block .social_content{
+    width: 25%;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+    text-align: left;
+}
+.social_content p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #959899;
+}
+
+.social_btnS .social_btn{
+    width: 50px;
+    height: 50px;
+    margin: 4px 2.5px;
+    background-color: #2d3235;
+    color: white;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-weight: 800;
+}
+.Fbook:hover{
+    background-color: #2753A7;
+}
+.Ytube:hover{
+    background-color: #c90202;
+}
+.Twitt:hover{
+    background-color: #55ACEE;
+}
+.Insta:hover{
+    background-color: #327ab1;
+}
+.Pint:hover{
+    background-color: #CD242B;
+}
+.In:hover{
+    background-color: #0274B3;
+}
+
+/* FOOTER_CONTAINER-END */
+
+/* MAIN-END */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* FOOTER */
+.footer_container2{
+    padding: 0rem 6rem;
+    padding-bottom: 50px;
+    background-color: #191F22;
+}
+.footer_container2 .title{
+    height: 80px;
+    padding: 0;
+}
+.footer_container2 .title h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.footer_container2 .footer_select_block{
+    display: flex;
+    gap: 20px;
+}
+.footer_select_block .footer_select{
+    width: 24%;
+    height: 50px;
+    padding: 0 8px;
+    font-size: 16px;
+    border: none;
+    background-color: #313639;
+    color: white;
+    outline: none;
+}
+.footer_select option{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.footer_container2 .copyright_block{
+    margin-top: 30px;
+    padding: 5px 0;
+    border-top: 1px solid #515151;
+}
+.copyright_block .copyright_text{
+    color: white;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+.copyright_text .span_text{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright_text a{
+    color: white;
+}
+.copyright_text a:hover{
+    color: #D5001C;
+}
+.copyright_text .span_text:hover{
+    color: #D5001C;
+}
+/* FOOTER-END */
