@@ -260,8 +260,6 @@
 .more_container{
     width: 100%;
     min-height: 100vh;
-    /* border-top: 5px solid red;
-    border-bottom: 5px solid red; */
     padding: 0 6.25rem;
 }
 .more_container .title{
@@ -597,6 +595,7 @@
 /* ADAPTIVE */
 
 @media screen and (max-width:1024px) {
+                    /* HEADER */
     .nav{
         height: 72px;
         justify-content: space-between;
@@ -637,9 +636,42 @@
     .burger .bars i{
         font-size: 20px;
     }
+                    /* HEADER */
+
+                    /* MAIN */
+
+    .main_container .car_block .car_cards{
+        width: 50%;
+    }
+    .car_cards .car_btn .car_all , .car_build{
+        padding: 14px 16px;
+    }
+    .more_container{
+        height: 100vh;
+        padding: 0rem 4.55rem;
+    }
+    .more_container .title{
+        margin-top: 450px;
+    }
+    .more_container .live_block{
+        height: 300px;
+        padding: 43.875px;
+    }
+    .live_block:nth-child(2):before{
+        height: 300px;
+    }
+    .live_block .live_content{
+        width: 95%;
+    }
+    .live_btnS{
+        width: 100%;
+    }
+
+                    /* MAIN  - END*/
 }
 
 @media screen and (max-width:768px) {
+                /* HEADER */
     .nav{
         padding: 0 2.25rem;
     }
@@ -651,6 +683,44 @@
         top: 58%;
         left: 4%;
     }
+                /* HEADER - END */
+
+                /* MAIN */
+    .main_container .title{
+        height: 90px;
+        padding: 0 3.75rem;
+    }   
+    .title p{
+        font-size: 30px;
+    }
+    .main_container .car_block .car_cards .car_title{
+        font-size: 30px;
+        padding: 0 1rem;
+    }
+    .more_container{
+        padding: 1px 3.75rem;
+    }
+    .more_container .title{
+        display: flex;
+        height: 100px;
+        margin-top: 50px;
+    }
+    .more_container .title h1{
+        font-size: 30px;
+    }
+    .more_container .live_block{
+        height: 300px;
+        padding: 33px;
+    }
+    .live_block:nth-child(2):before{
+        height: 300px;
+    }
+    .live_block .live_content{
+        width: 100%;
+    }
+
+                /* MAIN - END*/
+
 }
 
 @media screen and (max-width:425px) {
@@ -700,10 +770,42 @@
         left: 4%;
         font-size: 32px;
     }
+    .main_container .title{
+        padding: 0 2rem;
+    }
+    .title p , .title h1{
+        font-size: 24px;
+    }
+    .main_container .car_block .car_cards .car_title{
+        top: 85%;
+        font-size: 26px;
+    }
+    .main_container .car_block .car_cards .car_title::before{
+        content: '>';
+        font-size: 28px;
+        margin-right: 5px;
+        color: #D5001C;
+    }
+    .car_cards .car_btn{
+        display: none;
+    }
+    .more_container{
+        padding: 0 2rem;
+    }
+    .more_container .live_block{
+        height: 340px;
+        padding: 12px;
+
+    }
+    .live_block .live_content h3{
+        display: none;
+    }
+    .live_btnS{
+        flex-direction: column;
+        gap: 2.5px;
+    }
 }
 @media screen and (max-width:375px) {
-    .swiper-slide img{
-        /* object-fit: contain; */
-    }
+
 }
 /* ADAPTIVE - END */
