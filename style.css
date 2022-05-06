@@ -156,6 +156,9 @@
     color: red;
     cursor: pointer;
 }
+.swiper__2{
+    display: none;
+}
 /* SWIPER-END */
 
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
@@ -666,6 +669,14 @@
     .live_btnS{
         width: 100%;
     }
+    .discover_block .discover_cards{
+        width: 100%;
+        height: 80%;
+    }
+
+  
+
+
 
                     /* MAIN  - END*/
 }
@@ -719,6 +730,54 @@
         width: 100%;
     }
 
+
+
+                  /* SWIPER2 */
+                  
+    .swiper__2 {
+        width: 100%;
+        height: 35%;
+        display: block;
+    }
+
+    .swiper__slider {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper__slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination-bullet{
+        opacity: 0.8;
+        background-color: #333;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #D5001C !important;
+    }
+                                /* SWIPER2-END */
+    .discover_block{
+        display: none;
+    }
+
                 /* MAIN - END*/
 
 }
@@ -769,6 +828,13 @@
         top: 76.5%;
         left: 4%;
         font-size: 32px;
+    }
+
+    .swiper__slide img {
+        display: block;
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
     }
     .main_container .title{
         padding: 0 2rem;
