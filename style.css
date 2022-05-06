@@ -914,6 +914,7 @@
     }
    .footer_container .footer_list_block{
         display: none;
+        border-top: 2px solid #ccc;
     }
     .footer_list_block:last-child{
         display: block;
